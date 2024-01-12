@@ -1,0 +1,21 @@
+Po podłączeniu urządzenia do zasilania, rozpocznie się proces inicjalizacji działania czujnika zalania oraz modułu WIFi.
+
+Proces inicjalizacji podzielony jest na 3 etapy, gdzie zakończenie każdego z osobna jest zasygnalizowane poprzez unikatowy sygnał dźwiękowy. Sygnały te opisano poniżej:
+a) 1 krótki: poprawne połączenie mikrokontrolera STM z ESP-12E oraz pozytywne ustawienie modułu WiFi w trybie klienta,
+b) 2 krótkie: połączenie się urzadzenia z siecią WiFi,
+c) 1 długi: pobranie czasu RTC i załadowanie zmiennych programowych.
+
+Po wygenerowaniu ostatniego sygnału dźwiękowego urządzenie przechodzi w tryb uśpienia, co pozwoli na oszczędzenie zużycia energii.
+
+Istnieją 3 zdarzenia, które wybudzają urządzenie:
+1: Urządzenie wykrywa zalanie pomieszczenia cieczą, wydając przy tym wysoki, ciągły sygnał dźwiękowy. Wydarzenie to jest rozpoznawane przez aplikację mobilną, która wysyła powiadomienie użytkownikowi o zaistniałym zdarzeniu. Interfejs aplikacji również ulega zmianie. W rubryce oznaczonej przez symbol domu pojawi się ikona ostrzeżenia. W momencie, gdy czujnik wykryje brak wody (rozwarcie styków czujnika), sygnał dźwiękowy będzie funkcjonował jeszcze przez 15 sekund. Po tym czasie czujnik wyłączy sygnał dźwiękowy, przejdzie w stan uśpienia, a aplikacja mobilna powiadomi użytkownika o zniknięciu zagrożenia,
+
+2: Urządzenie wykrywa brak zasilania sieciowego. W takim przypadku urządzenie natychmiastowo przełącza się zasilanie awaryjne (jeśli jest włączone) i poprzez aplikację mobilną powiadamia o tym użytkownika. Należy także nadmienić fakt, że przycisk znajdujący się na obudowie urządzenia służy do ustawiania dostępności zasilania awaryjnego. Gdy przycisk ten jest odciśnięty, będzie powodować to deaktywację zasilania awaryjnego. Wciśnięcie spowoduje natomiast odwrotny skutek. Informację o utracie zasilania sieciowego wyświetli aplikacja mobilna. Zasygnalizowane to będzie poprzez powiadomienie oraz zmianę ikony ostrzeżenia w środkowej rubryce. Dodatkową informacją będzie aktualny stan naładowania zapasowego akumulatora. Aktualny stan zużycia jest wyświetlany w górze ekranu za pomocą obrazka baterii oraz napisu, podającego liczbową (procentową) wartość stanu naładowania. W przypadku wznowienia zasilania głównego urządzenie przejdzie w stan uśpienia, a aplikacja mobilna powiadomi użytkownika o przywróceniu normalnego trybu pracy,
+
+3: Codziennie o godzinie 14:30 czasu polskiego, urządzenie sprawdza poprawność działania swoich peryferiów. Podczas codziennej kontroli sprawdzany jest stan czujnika zalania oraz tryb zasilania. W przypadku, gdyby czujnik zalania lub układ nadzoru pracy zasilania działał niepoprawnie, codzienna kontrola mogłaby wykryć nieprawidłowości. Zależnie od otrzymanych informacji aplikacja mobilna informuje użytkownika o efektach kontroli. Informacja ta jest w postaci powiadomienia oraz zmiany ikony w trzeciej rubryce. W przypadku problemu z czujnikiem zalania ikona zmienia się na na symbol domu, a w przypadku problemów z układem zasilającym symbol zmienia się na akumulator. 
+
+W przypadku zaistnienia potrzeby wyłączenia urządzenia, należy deaktywować układ odpowiedzialny za dostępność zasilania awaryjnego poprzez odciśnięcie przycisku znajdującego się na górze obudowy. W przeciwnym razie urządzenie zamiast wyłączyć się, zacznie przesyłać informację o włączeniu zasilania awaryjnego.
+
+Ostatnią funkcjonalnością. na którą należy zwrócić uwagę jest przycisk znajdujący się w dole aplikacji mobilnej. Służy on do przeniesienia użytkownika na stronę internetową bazy danych ThingSpeak, gdzie możliwy jest podgląd historii zdarzeń. Zdarzenia opisane są za pomocą liczb, które zdefiniowane są w opisie kanału ThingSpeak.
+
+W razie braku funkcjonowania powiadomień w aplikacji mobilnej, należy sprawdzić uprawnienia, jakie system telefonu komórkowego przyznał aplikacji.

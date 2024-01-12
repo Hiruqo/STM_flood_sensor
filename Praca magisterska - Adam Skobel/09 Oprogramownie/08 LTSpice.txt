@@ -1,0 +1,2 @@
+Strona producenta:
+https://www.analog.com/en/design-center/design-tools-and-calculators/ltspice-simulator.html

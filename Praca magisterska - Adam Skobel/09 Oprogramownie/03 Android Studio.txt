@@ -1,0 +1,2 @@
+Link do strony producenta:
+https://developer.android.com/studio

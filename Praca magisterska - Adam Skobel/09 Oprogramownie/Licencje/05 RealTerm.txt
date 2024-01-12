@@ -1,0 +1,4 @@
+RealTerm is a free software published in the Terminal & Telnet Clients list of programs, part of Network & Internet.
+
+Link do strony producenta:
+https://realterm.sourceforge.io

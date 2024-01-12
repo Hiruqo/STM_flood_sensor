@@ -1,0 +1,3 @@
+Elementy biblioteczne dla programu Fusion360 zostały utworzone własnoręcznie przez piszącego pracę. 
+Stanowią one autorską wartość intelektualną.
+To samo dotyczy elementu bibliotecznego LTSpice.

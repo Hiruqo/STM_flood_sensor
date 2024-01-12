@@ -1,0 +1,3 @@
+The LaTeX project public license is a free software license. The most recent version of the LPPL is version 1.3c. The latest version, in plain text, can always be found at https://latex-project.org/lppl.txt. There is also a LaTeX version of the license, which authors of LPPL software are encouraged to include in their manuals.
+
+The article Reflections on the history of the LaTeX Project Public License (LPPL) - A software license for LaTeX and more gives some background information on the license, explains it components and the reasons behind it.

@@ -1,0 +1,12 @@
+PL:
+Celem pracy magisterskiej było zaprojektowanie, skonstruowanie oraz uruchomienie autonomicznego i energooszczędnego czujnika zalania, wykorzystującego mikrokontroler STM oraz moduł WiFi. 
+Urządzenie powinno być wyposażone we własne źródło zasilania.
+Praca wymagała także wykonania oprogramowania umożliwiającego zdalne nadzorowanie pracy czujnika oraz generowanie raportów w sytuacjach alarmowych poprzez prostą aplikację mobilną.
+Urządzenie powinno mieć mały rozmiar, aby umożliwić dogodny montaż w pomieszczeniu o podwyższonym ryzyku zalania oraz posiadać obudowę zapewniającą bezpieczną pracę.
+
+
+ENG:
+The aim of the thesis was to design, build and commission a standalone and energyefficient flooding sensor using an STM microcontroller and a WiFi module. 
+The device should be equipped with its own power supply.
+The work also required the development of software to remotely monitor sensor performance and generate reports in alarm situations via a simple mobile app.
+The unit should be small in size to allow convenient installation in a room with a high risk of flooding and have an enclosure to ensure safe operation.

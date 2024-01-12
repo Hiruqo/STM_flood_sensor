@@ -1,0 +1,4 @@
+Android Studio is part of the Android Open Source Project and accepts contributions.
+
+Link do strony producenta:
+https://developer.android.com/studio
